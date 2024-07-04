@@ -13,22 +13,78 @@
             align-items: center;
             height: 100vh;
             background-color: #87CEEB;
+            font-family: Arial, sans-serif;
+            background-image: url('assets/ocean_background.png');
+            background-size: cover;
         }
         #gameCanvas {
             border: 2px solid #000;
         }
+        #startScreen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(48, 25, 52, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        #startScreen:hover {
+            transform: scale(1.02);
+        }
+        #logoImage {
+            max-width: 400px;
+            margin-bottom: 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        #startButton {
+            font-size: 24px;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        #startButton:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        #scoreDisplay {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
+    <div id="startScreen" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; background-color: #290d3d; padding: 20px; border-radius: 10px;">
+        <img id="logoImage" src="/assets/logo.jpg" alt="Flappy Fish Logo" style="max-width: 300px; margin-bottom: 20px;">
+        <p id="scoreDisplay"></p>
+        <button id="startButton" autofocus>Start Game</button>
+    </div>
+
     <canvas id="gameCanvas"></canvas>
 
+    <audio id="backgroundMusic" loop>
+        <source src="assets/underwater_quest.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gameOverSound">
+        <source src="assets/fish-dead.mp3" type="audio/mpeg">
+    </audio>
+
     <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript">
-        // This ensures the DOM is fully loaded before running the game
-        document.addEventListener('DOMContentLoaded', (event) => {
-            createObstacle();
-            gameLoop();
-        });
-    </script>
+
 </body>
 </html>
