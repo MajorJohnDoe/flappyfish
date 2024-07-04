@@ -2,7 +2,7 @@
 
 Flappy Fish is an exciting game where you navigate a fish through various obstacles in an underwater world.
 
-![Flappy Fish Game Screenshot](assets/logo.jpg)
+<img src="assets/logo.jpg" alt="Flappy Fish Game Screenshot" width="300"/>
 
 ## Game Features
 
@@ -12,6 +12,6 @@ Flappy Fish is an exciting game where you navigate a fish through various obstac
 
 ## Screenshot
 
-![Flappy Fish Game Screenshot](assets/screenshot.png)
+<img src="assets/screenshot.png" alt="Flappy Fish Game Screenshot" width="400"/>
 
 In the screenshot, the player’s fish is seen swimming between two sets of green columns that rise from the top and bottom of the screen. The fish is centrally positioned, facing right, and emits small bubbles, adding to the underwater ambiance.
