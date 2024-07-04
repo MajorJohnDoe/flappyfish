@@ -10,6 +10,10 @@ Flappy Fish is an exciting game where you navigate a fish through various obstac
 - **Score and Speed Display:** The current score and speed multiplier are displayed at the top left of the screen, helping players keep track of their progress and performance.
 - **Aquatic Theme:** The game boasts a vibrant underwater setting with a blue gradient background, creating an immersive oceanic experience.
 
+## How to play
+
+Navigate the fish through obstacles using the WASD or arrow keys to avoid collisions and achieve the highest score.
+
 ## Screenshot
 
 <img src="assets/screenshot.png" alt="Flappy Fish Game Screenshot" width="400"/>
